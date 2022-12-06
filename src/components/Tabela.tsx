@@ -11,7 +11,6 @@ export interface TabelaProp {
 
 export default (props: TabelaProp) => {
   const exibirAcoes = props.clienteSelecionado || props.clienteExcluido;
-  console.log({ exibirAcoes });
 
   /*  const renderizarCabecalho = () => {
     return (

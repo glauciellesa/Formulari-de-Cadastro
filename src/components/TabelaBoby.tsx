@@ -7,7 +7,6 @@ interface ClientesProps extends TabelaProp {
 }
 
 export default (props: ClientesProps): JSX.Element => {
-  console.log(props.exibirAcoes);
   return (
     <>
       {/* :JSX.Element +  fragments to package an array of elements as a single element. 
