@@ -1,9 +1,9 @@
 export default class Cliente {
-  #id: string; //# usado para trabalharr com dados privados
+  #id?: string; //# usado para trabalharr com dados privados
   #nome: string;
   #idade: number;
 
-  constructor(nome: string, idade: number, id: string = null) {
+  constructor(nome: string, idade: number, id?: string) {
     this.#nome = nome;
     this.#idade = idade;
     this.#id = id;
