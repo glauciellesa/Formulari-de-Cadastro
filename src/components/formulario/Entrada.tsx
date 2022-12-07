@@ -1,3 +1,5 @@
+import React from "react";
+
 interface EntradaProps {
   tipo?: "text" | "number";
   texto: string;
@@ -9,7 +11,7 @@ interface EntradaProps {
 
 export default (props: EntradaProps) => {
   return (
-    <div className={`flex flex-col ${props.className}`}>
+    <form className={`flex flex-col ${props.className}`}>
       <label className="mb-2">{props.texto}</label>
       <input
         type={props.tipo ?? "text"}
@@ -22,6 +24,6 @@ export default (props: EntradaProps) => {
         px-4 py-0.5 ${props.somenteLeitura ? "" : "focus:bg-white"}
         `}
       />
-    </div>
+    </form>
   );
 };

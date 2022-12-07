@@ -37,7 +37,7 @@ export default (props: FormularioProps) => {
           className="mr-2"
           cor="sky"
           onClick={() => {
-            props.clienteMudou?.(new Cliente(nome, +idade, id));
+            props.clienteMudou?.(new Cliente(nome, idade, id));
           }}
         >
           {id ? "Alterar" : "Salvar"}
