@@ -30,6 +30,9 @@ export default () => {
   };
 
   const salvarCliente = async (cliente: Cliente) => {
+    if (cliente.nome.length === 0 || cliente.idade <= 0) {
+      return;
+    }
     await repo.salvar(cliente);
     obterTodos();
   };

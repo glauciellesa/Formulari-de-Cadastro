@@ -24,13 +24,17 @@ export default (props: FormularioProps) => {
         texto="Nome"
         valor={nome}
         valorMudou={setNome}
+        mensagemDeErro="Nome é obrigatório"
         className="mb-4"
+        required={true}
       />
       <Entrada
         texto="Idade"
         tipo="number"
         valor={idade}
         valorMudou={setIdade}
+        mensagemDeErro="Idade deve ser maior do que 0"
+        required={true}
       />
       <div className="mt-6 flex justify-end">
         <Botao
